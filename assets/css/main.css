@@ -2178,8 +2178,8 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background: #96dad1 !important;
-				border-color: #96dad1 !important;
+				background: #88d197 !important;
+				border-color: #88d197 !important;
 			}
 
 		input[type="button"].fit,
@@ -2474,7 +2474,7 @@ input, select, textarea {
 			}
 
 			.dropotron > li:hover > a {
-				background: #88d197;
+				background: #5c9968;
 				color: #fff;
 			}
 
@@ -2533,7 +2533,7 @@ input, select, textarea {
 		background-size: 25em, 25em, auto, cover;
 		color: #fff;
 		cursor: default;
-		padding: 6em 0;
+		padding: 8em 0;
 		text-align: center;
 	}
 
@@ -2625,13 +2625,14 @@ input, select, textarea {
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/NewsBanner.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
 		color: #fff;
 		padding: 5em;
 		text-align: center;
+		font-size: larger;
 	}
 
 		#cta header {
