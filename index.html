@@ -5,14 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-	<link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <a class="announcement-bar" href="">
-      <p class="announcement-bar__message">
-        Delivery is available only within San Francisco city limits.
-      </p>
-    </a>
+
+	<a class="announcement-bar" href="">
+		<p class="announcement-bar__message">
+		  Delivery is available only within San Francisco city limits.
+		</p>
+	  </a>
+
+	<nav class="nav collapsible">
+		<a class="nav__brand" href="/"><img src="images/CPS.png" alt="" /></a>
+		<svg class="icon icon--white nav__toggler">
+		  <use xlink:href="images/sprite.svg#menu"></use>
+		</svg>
+		<ul class="list nav__list collapsible__content">
+		  <li class="nav__item"><a href="#">Shop All</a></li>
+		  <li class="nav__item"><a href="#">Plants</a></li>
+		  <li class="nav__item"><a href="#">Accessories</a></li>
+		  <li class="nav__item"><a href="#">Gift</a></li>
+		</ul>
+	  </nav>
+	  <script src="js/main.js"></script>
   </body>
 </html>
