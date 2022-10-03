@@ -2,15 +2,15 @@
 <html>
 <head>
 
-  <title>Fadeshow Demo</title>
+  <title>City Plants</title>
 
   <meta charset="UTF-8">
   <meta name="description" content="This is the demo for CSS Fadeshow which is an easy to use fadeshow built in CSS only">
-  <meta name="keywords" content="CSS Fadeshow, Fadeshow, alexerlandsson, CSS only Slideshow">
-  <meta name="author" content="Alexander Erlandsson (@alexerlandsson)">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
 
   <!--<link rel="stylesheet" href="https://alexerlandsson.com/github/css-fadeshow/css/fadeshow.min.css">-->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/css-fadeshow.min.css">
 
   <style>
@@ -28,34 +28,6 @@
       font-family: 'Helvetica Neue', sans-serif;
       color: #666;
       font-size: 1rem;
-    }
-
-    .container {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .slide-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      color: white;
-      text-align: center;
-      text-shadow: 0 0 20px rgba(0,0,0,0.5);
-      z-index: 1;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-    }
-
-    .slide-content p {
-      font-size: calc(1rem + 10 * (100vw - 375px)/ (1199 - 375));
-      font-weight: 100;
-      margin-top: 0;
-      margin-bottom: 0.5em;
     }
 
     h1,
@@ -82,7 +54,7 @@
         font-size: 60px;
       }
 
-      .slide-content p {
+      .slide-content-test p {
         font-size: 26px;
       }
     }
@@ -91,7 +63,30 @@
 </head>
 <body>
 
-  <div class="container">
+  <a class="announcement-bar" href="">
+    <p class="announcement-bar__message">
+      Delivery is available only within San Francisco city limits.
+    </p>
+  </a>
+
+
+	<nav class="nav collapsible">
+		<a class="nav__brand" href="/"><img src="images/CPS.png" alt="" /></a>
+		<svg class="icon icon--white nav__toggler">
+		  <use xlink:href="images/sprite.svg#menu"></use>
+		</svg>
+		<ul class="list nav__list collapsible__content">
+		  <li class="nav__item"><a href="#">Shop All</a></li>
+		  <li class="nav__item"><a href="#">Plants</a></li>
+		  <li class="nav__item"><a href="#">Accessories</a></li>
+		  <li class="nav__item"><a href="#">Gift</a></li>
+		  <li class="nav__item"><a href="#">Search</a></li>
+		  <li class="nav__item"><a href="#">Cart</a></li>
+		</ul>
+	  </nav>
+	  <script src="js/main.js"></script>
+
+  <div class="container-test">
 
     <div data-fadeshow="quick-nav prev-next-nav slide-counter autoplay ken-burns">
 
@@ -107,9 +102,9 @@
         <div class="fs-slide">
           <div class="fs-slide-bg" style="background-image: url(https://images.unsplash.com/photo-1460500063983-994d4c27756c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2550);"></div>
           <!-- You can add content to slides (class names are not bound to CSS Fadeshow) -->
-          <div class="slide-content">
-            <h1>CSS Fadeshow</h1>
-            <p>Easy to implement and use on <strong>your</strong> site!</p>
+          <div class="slide-content-test">
+            <h3>The Largest Indoor Plant Selection in the city</h3>
+            <h1>Create Your green oasis</>
           </div>
         </div>
         <div class="fs-slide">
