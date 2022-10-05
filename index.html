@@ -1,74 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title>City Plants</title>
 
-  <title>City Plants</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This is the demo for CSS Fadeshow which is an easy to use fadeshow built in CSS only"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"
+    />
 
-  <meta charset="UTF-8">
-  <meta name="description" content="This is the demo for CSS Fadeshow which is an easy to use fadeshow built in CSS only">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/css-fadeshow.min.css" />
+  </head>
+  <body>
 
-  <!--<link rel="stylesheet" href="https://alexerlandsson.com/github/css-fadeshow/css/fadeshow.min.css">-->
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/css-fadeshow.min.css">
-
-  <style>
-    html,
-    body {
-      height: 100%;
-    }
-
-    html {
-      font-size: 100%;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      color: #666;
-      font-size: 1rem;
-    }
-
-    h1,
-    h2 {
-      margin-top: 0;
-      font-size: calc(2rem + 28 * (100vw - 375px)/ (1199 - 375));
-      margin-bottom: 0.2em;
-      font-weight: bold;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      color: black;
-    }
-
-    @media (min-width: 1200px) {
-      h1,
-      h2 {
-        font-size: 60px;
-      }
-
-      .slide-content-test p {
-        font-size: 26px;
-      }
-    }
-  </style>
-
-</head>
-<body>
-
-  <a class="announcement-bar" href="">
-    <p class="announcement-bar__message">
-      Delivery is available only within San Francisco city limits.
-    </p>
-  </a>
-
+    <a class="announcement-bar" href="">
+      <p class="announcement-bar__message">
+        Delivery is available only within San Francisco city limits.
+      </p>
+    </a>
 
 	<nav class="nav collapsible">
 		<a class="nav__brand" href="/"><img src="images/CPS.png" alt="" /></a>
@@ -84,79 +39,111 @@
 		  <li class="nav__item"><a href="#">Cart</a></li>
 		</ul>
 	  </nav>
-	  <script src="js/main.js"></script>
 
-  <div class="container-test">
-
-    <div data-fadeshow="quick-nav prev-next-nav slide-counter autoplay ken-burns">
-
-      <!-- Radio -->
-      <input type="radio" name="css-fadeshow" id="fs-slide-1" />
-      <input type="radio" name="css-fadeshow" id="fs-slide-2" />
-      <input type="radio" name="css-fadeshow" id="fs-slide-3" />
-      <input type="radio" name="css-fadeshow" id="fs-slide-4" />
-      <input type="radio" name="css-fadeshow" id="fs-slide-5" />
-
-      <!-- Slides -->
-      <div class="fs-slides">
-        <div class="fs-slide">
-          <div class="fs-slide-bg" style="background-image: url(https://images.unsplash.com/photo-1460500063983-994d4c27756c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2550);"></div>
-          <!-- You can add content to slides (class names are not bound to CSS Fadeshow) -->
-          <div class="slide-content-test">
-            <h3>The Largest Indoor Plant Selection in the city</h3>
-            <h1>Create Your green oasis</>
+    <div class="container-test">
+      <div data-fadeshow="quick-nav prev-next-nav slide-counter autoplay ken-burns">
+        <!-- Radio -->
+        <input type="radio" name="css-fadeshow" id="fs-slide-1" />
+        <input type="radio" name="css-fadeshow" id="fs-slide-2" />
+        <input type="radio" name="css-fadeshow" id="fs-slide-3" />
+        <input type="radio" name="css-fadeshow" id="fs-slide-4" />
+        <input type="radio" name="css-fadeshow" id="fs-slide-5" />
+    
+        <!-- Slides -->
+        <div class="fs-slides">
+          <div class="fs-slide">
+            <div
+              class="fs-slide-bg"
+              style="background-image: url(images/Hero-1.jpg)"
+            ></div>
+            <!-- You can add content to slides (class names are not bound to CSS Fadeshow) -->
+            <div class="slide-content-test">
+              <h3>The Largest Indoor Plant Selection in the city</h3>
+              <h1>Create Your green oasis</h1>
+            </div>
+          </div>
+          <div class="fs-slide">
+            <div
+              class="fs-slide-bg"
+              style="background-image: url(images/Hero-2.jpg)"
+            ></div>
+          </div>
+          <div class="fs-slide">
+            <div
+              class="fs-slide-bg"
+              style="background-image: url(images/Hero-3.jpg)"
+            ></div>
+          </div>
+          <div class="fs-slide">
+            <div
+              class="fs-slide-bg"
+              style="background-image: url(images/Hero-4.jpg)"
+            ></div>
+          </div>
+          <div class="fs-slide">
+            <div
+              class="fs-slide-bg"
+              style="background-image: url(images/Hero-5.jpg)"
+            ></div>
           </div>
         </div>
-        <div class="fs-slide">
-          <div class="fs-slide-bg" style="background-image: url(https://images.unsplash.com/photo-1440557653082-e8e186733eeb?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);"></div>
+    
+        <!-- Quick Navigation -->
+        <div class="fs-quick-nav">
+          <label class="fs-quick-btn" for="fs-slide-1"></label>
+          <label class="fs-quick-btn" for="fs-slide-2"></label>
+          <label class="fs-quick-btn" for="fs-slide-3"></label>
+          <label class="fs-quick-btn" for="fs-slide-4"></label>
+          <label class="fs-quick-btn" for="fs-slide-5"></label>
         </div>
-        <div class="fs-slide">
-          <div class="fs-slide-bg" style="background-image: url(https://images.unsplash.com/photo-1449057528837-7ca097b3520c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);"></div>
+    
+        <!-- Prev Navigation -->
+        <div class="fs-prev-nav">
+          <label class="fs-prev-btn" for="fs-slide-1"></label>
+          <label class="fs-prev-btn" for="fs-slide-2"></label>
+          <label class="fs-prev-btn" for="fs-slide-3"></label>
+          <label class="fs-prev-btn" for="fs-slide-4"></label>
+          <label class="fs-prev-btn" for="fs-slide-5"></label>
         </div>
-        <div class="fs-slide">
-          <div class="fs-slide-bg" style="background-image: url(https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?crop=entropy&fit=crop&fm=jpg&h=1300&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);"></div>
+    
+        <!-- Next Navigation -->
+        <div class="fs-next-nav">
+          <label class="fs-next-btn" for="fs-slide-1"></label>
+          <label class="fs-next-btn" for="fs-slide-2"></label>
+          <label class="fs-next-btn" for="fs-slide-3"></label>
+          <label class="fs-next-btn" for="fs-slide-4"></label>
+          <label class="fs-next-btn" for="fs-slide-5"></label>
         </div>
-        <div class="fs-slide">
-          <div class="fs-slide-bg" style="background-image: url(https://images.unsplash.com/photo-1432117068802-b224427256a5?crop=entropy&fit=crop&fm=jpg&h=1300&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);"></div>
-        </div>
-      </div>            
-
-      <!-- Quick Navigation -->
-      <div class="fs-quick-nav">
-        <label class="fs-quick-btn" for="fs-slide-1"></label>
-        <label class="fs-quick-btn" for="fs-slide-2"></label>
-        <label class="fs-quick-btn" for="fs-slide-3"></label>
-        <label class="fs-quick-btn" for="fs-slide-4"></label>
-        <label class="fs-quick-btn" for="fs-slide-5"></label>
       </div>
-
-      <!-- Prev Navigation -->
-      <div class="fs-prev-nav">
-        <label class="fs-prev-btn" for="fs-slide-1"></label>
-        <label class="fs-prev-btn" for="fs-slide-2"></label>
-        <label class="fs-prev-btn" for="fs-slide-3"></label>
-        <label class="fs-prev-btn" for="fs-slide-4"></label>
-        <label class="fs-prev-btn" for="fs-slide-5"></label>
-      </div>
-
-      <!-- Next Navigation -->
-      <div class="fs-next-nav">
-        <label class="fs-next-btn" for="fs-slide-1"></label>
-        <label class="fs-next-btn" for="fs-slide-2"></label>
-        <label class="fs-next-btn" for="fs-slide-3"></label>
-        <label class="fs-next-btn" for="fs-slide-4"></label>
-        <label class="fs-next-btn" for="fs-slide-5"></label>
-      </div>
-
-      <!-- Slide Counter -->
-      <div class="fs-slide-counter">
-        <span class="fs-slide-counter-current"></span>/<span class="fs-slide-counter-total"></span>
-      </div>
-
     </div>
+    
 
-  </div>
-
-</body>
+    <div class="grid grid--2x1 title">
+      <h1>Shop By Collection</h1>
+      <hr>
+      <div class="grid grid--2x2 categories">
+          <div class="Best-Sellers">
+            <div class="content">
+              <H2>Best Sellers</H2>
+            </div>
+          </div>
+          <div class="pots">
+            <h2>
+              Pots & Accessories
+            </h2>
+          </div>
+          <div class="low-light">
+            <h2>
+              Low light plants
+            </h2>
+          </div>
+          <div class="pet-safe">
+            <h2>
+              pet safe plants
+            </h2>
+          </div>
+            </div>
+          </div>
+        </div>
+  </body>
 </html>
-
