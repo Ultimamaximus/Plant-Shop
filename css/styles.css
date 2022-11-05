@@ -749,3 +749,16 @@ padding: 1.1rem;
   text-align: center;
   background-color: white;
 }
+
+/* Plant Collection */
+
+.collections {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.collections li {
+  padding: 1.1rem;
+}
