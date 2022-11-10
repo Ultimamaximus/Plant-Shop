@@ -12,11 +12,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"
     />
-
+    <link rel="icon" href="images/CPS.png">
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/css-fadeshow.min.css" />
-    <link rel="stylesheet" href="../css/test.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   </head>
   <body>
 
@@ -32,12 +35,13 @@
         <use xlink:href="images/sprite.svg#menu"></use>
       </svg>
       <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">Shop All</a></li>
-        <li class="nav__item"><a href="#">Plants</a></li>
-        <li class="nav__item"><a href="#">Accessories</a></li>
-        <li class="nav__item"><a href="#">Gift</a></li>
-        <li class="nav__item"><a href="#">Search</a></li>
-        <li class="nav__item"><a href="#">Cart</a></li>
+        <li class="nav__item"><a href="shop.html">Shop All</a></li>
+        <li class="nav__item"><a href="plants.html">Plants</a></li>
+        <li class="nav__item"><a href="pots.html">Accessories</a></li>
+        <li class="nav__item"><a href="gift.html">Gift</a></li>
+        <li class="nav__item search"><a href="#"> <i class="bi bi-person-fill"></i> </a></li>
+        <li class="nav__item search"><a href="#"> <i class="bi bi-search"></i> </a></li>
+        <li class="nav__item cart"><a href="#"><i class="bi bi-cart-fill"></i></a></li>
       </ul>
       </nav>
 
@@ -260,15 +264,17 @@
   <div class="directions">
     <div class="map">
       <h3>visit us</h3>
-      <p>SF PLANTS & BELLA FIORA
+      <p><strong> City Plants </strong>
+        <br>
         1475 Polk st (Second floor)
         San Francisco, CA</p>
         <p>
           Tue - Sun, 11am - 6pm
+                  <br>
             Monday, Closed
         </p>
         <button class="btn btn--accent">
-          Get Directions
+          <i class="bi bi-geo-alt-fill"></i> Get Directions
       </button>
     </div>
   </div>
