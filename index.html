@@ -12,326 +12,337 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"
     />
-    <link rel="icon" href="images/CPS.png">
+    <link rel="icon" href="images/CPL.png" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/css-fadeshow.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-
+    <!-- Site Banner -->
     <a class="announcement-bar" href="">
       <p class="announcement-bar__message">
         Delivery is available only within San Francisco city limits.
       </p>
     </a>
 
+    <!-- Nav Bar -->
     <nav class="nav collapsible">
-      <a class="nav__brand" href="/"><img src="images/CPS.png" alt="" /></a>
-      <svg class="icon icon--white nav__toggler">
-        <use xlink:href="images/sprite.svg#menu"></use>
-      </svg>
+      <a class="nav__brand" href="/"><img src="images/CPL.png" alt="" /></a>
       <ul class="list nav__list collapsible__content">
         <li class="nav__item"><a href="shop.html">Shop All</a></li>
         <li class="nav__item"><a href="plants.html">Plants</a></li>
         <li class="nav__item"><a href="pots.html">Accessories</a></li>
         <li class="nav__item"><a href="gift.html">Gift</a></li>
-        <li class="nav__item search"><a href="#"> <i class="bi bi-person-fill"></i> </a></li>
-        <li class="nav__item search"><a href="#"> <i class="bi bi-search"></i> </a></li>
-        <li class="nav__item cart"><a href="#"><i class="bi bi-cart-fill"></i></a></li>
+        <li class="nav__item search">
+          <a href="#"> <i class="bi bi-person-fill"></i> </a>
+        </li>
+        <li class="nav__item cart">
+          <a href="#"><i class="bi bi-cart-fill"></i></a>
+        </li>
+        <li class="nav__item search">
+          <a href="#"> <i class="bi bi-search"></i> </a>
+        </li>
       </ul>
-      </nav>
+    </nav>
 
-      <div class="slide-container">
-        <div data-fadeshow="quick-nav prev-next-nav slide-counter autoplay ken-burns">
-          <!-- Radio -->
-          <input type="radio" name="css-fadeshow" id="fs-slide-1" />
-          <input type="radio" name="css-fadeshow" id="fs-slide-2" />
-          <input type="radio" name="css-fadeshow" id="fs-slide-3" />
-          <input type="radio" name="css-fadeshow" id="fs-slide-4" />
-          <input type="radio" name="css-fadeshow" id="fs-slide-5" />
-      
-          <!-- Slides -->
-          <div class="fs-slides">
-            <div class="fs-slide">
-              <div
-                class="fs-slide-bg"
-                style="background-image: url(images/Hero-1.jpg)"
-              ></div>
-              <!-- You can add content to slides (class names are not bound to CSS Fadeshow) -->
-              <div class="slide-content">
-                <h3>The Largest Indoor Plant Selection in the city</h3>
-                <h1>Create Your green oasis</h1>
-              </div>
-            </div>
-            <div class="fs-slide">
-              <div
-                class="fs-slide-bg"
-                style="background-image: url(images/Hero-2.jpg)"
-              ></div>
-            </div>
-            <div class="fs-slide">
-              <div
-                class="fs-slide-bg"
-                style="background-image: url(images/Hero-3.jpg)"
-              ></div>
-            </div>
-            <div class="fs-slide">
-              <div
-                class="fs-slide-bg"
-                style="background-image: url(images/Hero-4.jpg)"
-              ></div>
-            </div>
-            <div class="fs-slide">
-              <div
-                class="fs-slide-bg"
-                style="background-image: url(images/Hero-5.jpg)"
-              ></div>
-            </div>
-          </div>
-      
-          <!-- Quick Navigation -->
-          <div class="fs-quick-nav">
-            <label class="fs-quick-btn" for="fs-slide-1"></label>
-            <label class="fs-quick-btn" for="fs-slide-2"></label>
-            <label class="fs-quick-btn" for="fs-slide-3"></label>
-            <label class="fs-quick-btn" for="fs-slide-4"></label>
-            <label class="fs-quick-btn" for="fs-slide-5"></label>
-          </div>
-      
-          <!-- Prev Navigation -->
-          <div class="fs-prev-nav">
-            <label class="fs-prev-btn" for="fs-slide-1"></label>
-            <label class="fs-prev-btn" for="fs-slide-2"></label>
-            <label class="fs-prev-btn" for="fs-slide-3"></label>
-            <label class="fs-prev-btn" for="fs-slide-4"></label>
-            <label class="fs-prev-btn" for="fs-slide-5"></label>
-          </div>
-      
-          <!-- Next Navigation -->
-          <div class="fs-next-nav">
-            <label class="fs-next-btn" for="fs-slide-1"></label>
-            <label class="fs-next-btn" for="fs-slide-2"></label>
-            <label class="fs-next-btn" for="fs-slide-3"></label>
-            <label class="fs-next-btn" for="fs-slide-4"></label>
-            <label class="fs-next-btn" for="fs-slide-5"></label>
-          </div>
-        </div>
-      </div>
+    <!-- Site Hero -->
+    <div class="slide-container">
+      <div
+        data-fadeshow="quick-nav prev-next-nav slide-counter autoplay ken-burns"
+      >
+        <!-- Radio -->
+        
+        <input type="radio" name="css-fadeshow" id="fs-slide-1" />
+        <input type="radio" name="css-fadeshow" id="fs-slide-2" />
+        <input type="radio" name="css-fadeshow" id="fs-slide-3" />
+        <input type="radio" name="css-fadeshow" id="fs-slide-4" />
+        <input type="radio" name="css-fadeshow" id="fs-slide-5" />
 
-      <div class="section-header">
-        <h2>Shop By Collecion</h2>
-        <hr class="hr--small">
-      </div>
-
-      <div class="grid categories">
-        <div class="catagory best-sellers">
-          <h2>Best Sellers</h2>
-        </div>
-          <div class="catagory pots">
-            <h2>
-              Pots & Accessories
-            </h2>
-          </div>
-          <div class="catagory low-light">
-            <h2>
-              Low light plants
-            </h2>
-          </div>
-          <div class="catagory pet-safe">
-            <h2>
-              Pet Safe Plants
-            </h2>
-          </div>
+        <!-- Slides -->
+        <div class="fs-slides">
+          
+          <div class="fs-slide">
+            <a href="shop.html">
+            <div
+              class="fs-slide-bg"
+              style="background-image: url(images/Hero-1.jpg)"
+            ></div>
+          </a>
+        
+            <!-- You can add content to slides (class names are not bound to CSS Fadeshow) -->
+            <a href="shop.html">
+            <div class="slide-content">
+              <h3>The Largest Indoor Plant Selection in the city</h3>
+              <h1>Create Your green oasis</h1>
             </div>
-
+            </a>
+          </div>
        
-<div class="section-header">
-  <h2>New Arrivals</h2>
-  <hr class="hr--small">
-</div>
+   
+     
+          <div class="fs-slide">
+            <a href="gift.html">
+            <div
+              class="fs-slide-bg"
+              style="background-image: url(images/Hero-2.jpg)"
+            ></div>
+          </a>
+          <a href="gift.html">
+            <div class="slide-content">
+              <h3>Share the plant love with your besties</h3>
+              <h1>Get Your Gift Cards Today</h1>
+            </div>
+          </a>
+          </div>
+          <div class="fs-slide">
+          <a href="pots.html">
+            <div
+              class="fs-slide-bg"
+              style="background-image: url(images/Hero-3.jpg)"
+            ></div>
+          </a>
+          <a href="pots.html">
+            <div class="slide-content">
+              <h3>Checkout our awesome collection of pots and accessories</h3>
+              <h1>From the comfort of your home</h1>
+            </div>
+          </a>
+          </div>
+          <div class="fs-slide">
+            <a href="plants.html">
+            <div
+              class="fs-slide-bg"
+              style="background-image: url(images/Hero-4.jpg)"
+            ></div>
+          </a>
+          <a href="plants.html">
+            <div class="slide-content">
+              <h3>Pet parents get ready to join the plant club</h3>
+              <h1>Sneak a peek at our extensive Pet-Safe collection</h1>
+            </div>
+          </a>
+          </div>
+          <div class="fs-slide">
+            <div
+              class="fs-slide-bg"
+              style="background-image: url(images/Hero-5.jpg)"
+            ></div>
+          </div>
+        </div>
 
-<div class="grid grid-collection">
-    <div class="grid-item grid-item-large">
-        <img src="images/Category-BS.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-    <div class="grid-item grid-item-small">
-      <img src="images/Category-BS.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-    <div class="grid-item grid-item-small">
-      <img src="images/Category-LL.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-  </div>
+        <!-- Quick Navigation -->
+        <div class="fs-quick-nav">
+          <label class="fs-quick-btn" for="fs-slide-1"></label>
+          <label class="fs-quick-btn" for="fs-slide-2"></label>
+          <label class="fs-quick-btn" for="fs-slide-3"></label>
+          <label class="fs-quick-btn" for="fs-slide-4"></label>
+          <label class="fs-quick-btn" for="fs-slide-5"></label>
+        </div>
 
-  <div class="grid grid-collection">
-    <div class="grid-item grid-item-large">
-        <img src="images/Category-BS.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-    <div class="grid-item grid-item-small">
-      <img src="images/Category-BS.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-    <div class="grid-item grid-item-small">
-      <img src="images/Category-LL.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-  </div>
+        <!-- Prev Navigation -->
+        <div class="fs-prev-nav">
+          <label class="fs-prev-btn" for="fs-slide-1"></label>
+          <label class="fs-prev-btn" for="fs-slide-2"></label>
+          <label class="fs-prev-btn" for="fs-slide-3"></label>
+          <label class="fs-prev-btn" for="fs-slide-4"></label>
+          <label class="fs-prev-btn" for="fs-slide-5"></label>
+        </div>
 
-  <div class="grid grid-collection">
-    <div class="grid-item grid-item-large">
-        <img src="images/Category-BS.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-    <div class="grid-item grid-item-small">
-      <img src="images/Category-BS.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-    <div class="grid-item grid-item-small">
-      <img src="images/Category-LL.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-  </div>
-
-  <div class="grid grid-collection">
-    <div class="grid-item grid-item-large">
-        <img src="images/Category-BS.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-    <div class="grid-item grid-item-small">
-      <img src="images/Category-BS.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-    <div class="grid-item grid-item-small">
-      <img src="images/Category-LL.jpg" alt="">
-      <div class="Caption">Lorem ipsum dolor sit amet.</div>
-    </div>
-  </div>
-
-  <div class="section-header-trial">
-    <h2>Two levels and over 3500 sq ft</h2>
-    <p>We source an extraordinary collection of plants and seasonal flowers for every imaginable occasion. Our commitment is to help you enrich your personal space with variety of plants, creating a green and healthy oasis.</p>
-  <span>SHOP NOW</span>
-  </div>
-
-  <div class="card__container">
-    <div class="card grid">
-      <div class="gift">
-       <h3>City Plants</h3>
-       <p>Plant Parent Central</p>
-      </div>
-      <div class="price">
-        <h3>Gift Card</h3>
-        <hr class="hr--small">
-        <h4>$10.00</h4>
-        <ul class="price__list">
-          <li>$10</li>
-          <li>$25</li>
-          <li>$50</li>
-          <li>$75</li>
-          <li>$100</li>
-          <li>$150</li>
-          <li>$200</li>
-          <li>$300</li>
-        </ul>
-        <button class="btn btn--accent">
-          Add to Cart
-      </button>
+        <!-- Next Navigation -->
+        <div class="fs-next-nav">
+          <label class="fs-next-btn" for="fs-slide-1"></label>
+          <label class="fs-next-btn" for="fs-slide-2"></label>
+          <label class="fs-next-btn" for="fs-slide-3"></label>
+          <label class="fs-next-btn" for="fs-slide-4"></label>
+          <label class="fs-next-btn" for="fs-slide-5"></label>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="newsletter">
-    <div class="section-header-bt">
-      <h2>Newsletter</h2>
-      <p>Don't miss our promotions, sales, updates on new plant restocks and exciting news.</p>
-      <hr class="hr--small">
-      <div class="input-group">
-        <input type="text" class="input" placeholder="Your email" />
-        <button class="btn btn--accent">
-            Subscribe
-        </button>
+    <!-- Product Categories -->
+    <div class="section-header">
+      <h2>Shop By Collecion</h2>
+      <hr class="hr--small" />
+    </div>
+
+    <div class="grid categories">
+      <div class="catagory best-sellers">
+        <h2>Best Sellers</h2>
+      </div>
+      <div class="catagory pots">
+        <h2>Pots & Accessories</h2>
+      </div>
+      <div class="catagory low-light">
+        <h2>Low light plants</h2>
+      </div>
+      <div class="catagory pet-safe">
+        <h2>Pet Safe Plants</h2>
       </div>
     </div>
-  </div>
 
-  <div class="directions">
-    <div class="map">
-      <h3>visit us</h3>
-      <p><strong> City Plants </strong>
-        <br>
-        1475 Polk st (Second floor)
-        San Francisco, CA</p>
+    <!-- Site Bio -->
+    <div class="section-header-trial">
+      <h2>Two levels and over 2500 sq ft</h2>
+      <p>
+        We source an extraordinary collection of plants and seasonal flowers for
+        every imaginable occasion. Our commitment is to help you enrich your
+        personal space with variety of plants, creating a green and healthy
+        oasis.
+      </p>
+      <span>SHOP NOW</span>
+    </div>
+
+    <!-- New Arrivals -->
+    <div class="section-header">
+      <h2>New Arrivals</h2>
+      <hr class="hr--small" />
+    </div>
+
+    <div class="grid grid-collection">
+      <div class="grid-item grid-item-large">
+        <img src="images/Category-BS.jpg" alt="" />
+        <div class="Caption">Lorem ipsum dolor sit amet.</div>
+      </div>
+      <div class="grid-item grid-item-small">
+        <img src="images/Category-BS.jpg" alt="" />
+        <div class="Caption">Lorem ipsum dolor sit amet.</div>
+      </div>
+      <div class="grid-item grid-item-small">
+        <img src="images/Category-LL.jpg" alt="" />
+        <div class="Caption">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <div class="grid grid-collection">
+      <div class="grid-item grid-item-large">
+        <img src="images/Category-BS.jpg" alt="" />
+        <div class="Caption">Lorem ipsum dolor sit amet.</div>
+      </div>
+      <div class="grid-item grid-item-small">
+        <img src="images/Category-BS.jpg" alt="" />
+        <div class="Caption">Lorem ipsum dolor sit amet.</div>
+      </div>
+      <div class="grid-item grid-item-small">
+        <img src="images/Category-LL.jpg" alt="" />
+        <div class="Caption">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <div class="grid grid-collection">
+      <div class="grid-item grid-item-large">
+        <img src="images/Category-BS.jpg" alt="" />
+        <div class="Caption">Lorem ipsum dolor sit amet.</div>
+      </div>
+      <div class="grid-item grid-item-small">
+        <img src="images/Category-BS.jpg" alt="" />
+        <div class="Caption">Lorem ipsum dolor sit amet.</div>
+      </div>
+      <div class="grid-item grid-item-small">
+        <img src="images/Category-LL.jpg" alt="" />
+        <div class="Caption">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <div class="section-header-bt">
+        <h2>Newsletter</h2>
+        <p>
+          Don't miss our promotions, sales, updates on new plant restocks and
+          exciting news.
+        </p>
+        <hr class="hr--small" />
+        <div class="input-group">
+          <input type="text" class="input" placeholder="Your email" />
+          <button class="btn btn--accent">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Location directions -->
+    <div class="directions">
+      <div class="map">
+        <h3>visit us</h3>
+        <p>
+          <strong> City Plants </strong>
+          <br />
+          1475 Polk st (Second floor) San Francisco, CA
+        </p>
         <p>
           Tue - Sun, 11am - 6pm
-                  <br>
-            Monday, Closed
+          <br />
+          Monday, Closed
         </p>
         <button class="btn btn--accent">
           <i class="bi bi-geo-alt-fill"></i> Get Directions
-      </button>
+        </button>
+      </div>
     </div>
-  </div>
 
-  <footer class="block block--dark footer">
-    <hr class="hr--small">
-    <div class="container grid footer__sections">
-      <section class="collapsible collapsible--expanded footer__section">
-        <header class="collapsible__header">
-          <h2 class="collapsible__heading footer__heading">Products</h2>
-          <svg class="icon icon--white collapsible__chevron">
-            <use xlink:href="images/sprite.svg#chevron"></use>
-          </svg>
-        </header>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li><a href="#">Delivery Policy</a></li>
-            <li><a href="#">Design Services</a></li>
-            <li><a href="#">Covid Update</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="collapsible footer__section">
-        <header class="collapsible__header">
-          <h2 class="collapsible__heading footer__heading">Company</h2>
-          <svg class="icon icon--white collapsible__chevron">
-            <use xlink:href="images/sprite.svg#chevron"></use>
-          </svg>
-        </header>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Affiliates</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="collapsible footer__section">
-        <header class="collapsible__header">
-          <h2 class="collapsible__heading footer__heading">Support</h2>
-          <svg class="icon icon--white collapsible__chevron">
-            <use xlink:href="images/sprite.svg#chevron"></use>
-          </svg>
-        </header>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Refund/Exchange Policy</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="footer__brand">
-        <img src="images/CPS.png" alt="" />
-        <p class="footer__copyright">Copyright 2022 City Plants</p>
-      </section>
-    </div>
-  </footer>
+    <!-- Site Footer -->
+    <footer class="block block--dark footer">
+      <hr class="hr--small" />
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Delivery Policy</a></li>
+              <li><a href="#">Design Services</a></li>
+              <li><a href="#">Covid Update</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Refund/Exchange Policy</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <img src="images/CPL.png" alt="" />
+          <p class="footer__copyright">Copyright 2022 City Plants</p>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
