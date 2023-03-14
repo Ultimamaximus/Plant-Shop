@@ -1,62 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/css-fadeshow.min.css" />
-</head>
-<body>
+    <link rel="icon" href="images/CPL.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/css-fadeshow.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Site Banner -->
     <a class="announcement-bar" href="">
-        <p class="announcement-bar__message">
-          Delivery is available only within San Francisco city limits.
-        </p>
-      </a>
-  
-      <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img src="images/CPS.png" alt="" /></a>
-        <svg class="icon icon--white nav__toggler">
-          <use xlink:href="images/sprite.svg#menu"></use>
-        </svg>
-        <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Shop All</a></li>
-          <li class="nav__item"><a href="#">Plants</a></li>
-          <li class="nav__item"><a href="#">Accessories</a></li>
-          <li class="nav__item"><a href="#">Gift</a></li>
-          <li class="nav__item"><a href="#">Search</a></li>
-          <li class="nav__item"><a href="#">Cart</a></li>
-        </ul>
-        </nav>
+      <p class="announcement-bar__message">
+        Delivery is available only within San Francisco city limits.
+      </p>
+    </a>
 
-        <div class="contact-page__container container">
-            <div class="section-header">
-                <h2>Contact Us</h2>
-                <hr class="hr--small">
-              </div>
-              <p>
-                To schedule a delivery date please refer to our delivery policy page.
-                 Our delivery days are Wednesday and Friday unless otherwise agreed upon. For immediate assistance please contact our store at (415) 441-5390.
-                 Our Temporary Business Hours are: Wednesday to Sunday 11:00am to 6:00pm.
-              </p>
-                <form id="contactform" action="#" method="POST" enctype="multipart/form-data">
-                    
-                        <input type="text" id="namearea" name="name" placeholder="Name">
-                        <input type="email" id="emailarea" name="email" placeholder="Email">
+    <!-- Nav Bar -->
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/"><img src="images/CPL.png" alt="" /></a>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="shop.html">Shop All</a></li>
+        <li class="nav__item"><a href="plants.html">Plants</a></li>
+        <li class="nav__item"><a href="pots.html">Accessories</a></li>
+        <li class="nav__item"><a href="gift.html">Gift</a></li>
 
-                    <br>
-                    <input type="tel" id="phonearea" name="phone" placeholder="Phone"><br>
-                    <textarea id="textarea" name="message" placeholder="Message">
-                        </textarea><br>
-                        <input type="submit" value="Submit">
-                  </form>
+        <li class="nav__item nav__item_icon">
+          <a href="#"> <i class="bi bi-person-fill"></i> </a>
+        </li>
 
-    
+        <li class="nav__item nav__item_icon">
+          <a href="#"><i class="bi bi-cart-fill"></i></a>
+        </li>
+
+        <li class="nav__item nav__item_icon">
+          <a href="#"> <i class="bi bi-search"></i> </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="contact-page__container container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <hr class="hr--small" />
+      </div>
+      <p>
+        To schedule a delivery date please refer to our delivery policy page.
+        Our delivery days are Wednesday and Friday unless otherwise agreed upon.
+        For immediate assistance please contact our store at (415) 441-5390. Our
+        Temporary Business Hours are:
+        <strong> Wednesday to Sunday 11:00am to 6:00pm</strong>
+      </p>
+      <form
+        id="contactform"
+        action="#"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input type="text" id="namearea" name="name" placeholder="Name" />
+        <input type="email" id="emailarea" name="email" placeholder="Email" />
+
+        <br />
+        <input
+          type="tel"
+          id="phonearea"
+          name="phone"
+          placeholder="Phone"
+        /><br />
+        <textarea id="textarea" name="message" placeholder="Message"></textarea
+        ><br />
+        <div class="wrap">
+          <button class="btn btn--accent">Submit</button>
         </div>
+      </form>
+    </div>
 
-
-
-</body>
+    <footer class="block block--dark footer">
+      <hr class="section-header__hr" />
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Delivery Policy</a></li>
+              <li><a href="#">Design Services</a></li>
+              <li><a href="#">Covid Update</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Refund/Exchange Policy</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <img src="images/CPL.png" alt="" />
+          <p class="footer__copyright">Copyright 2022 City Plants</p>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>
