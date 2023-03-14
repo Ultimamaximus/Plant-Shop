@@ -852,3 +852,15 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Delivery Page */
+
+.delivery-page__container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.delivery-page__container h3 {
+  text-align: center;
+}
